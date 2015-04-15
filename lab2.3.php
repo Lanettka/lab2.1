@@ -20,7 +20,6 @@ if (isset($_GET['y2'])) {
 } else {
    $y2 = '';
 }
-
 ?>
 <html>
 <head>
@@ -41,9 +40,13 @@ if (isset($_GET['y2'])) {
       	</select>
        y2<input type="text" name="y2" value="<?php echo $y2 ?>">
        =
+       <br><br>
        <?php 
-	echo "$vidstanX=" . $x1-$x2;
-	echo "$vidstanY=" . $y1-$y2;
+	
+	echo "x1-x2 = ", $x1-$x2, "<br>"; 
+	echo "y1-y2 = ", $y1-$y2, "<br>";
+	echo "The distance between the points with coordinates (x1,y1)(x2,y2) = ", $x1-$x2, $y1-$y2, "<br>";
+
 		?>
        <br><br>
        <button type="submit" name="submit" value="submit">Calculate</button>
