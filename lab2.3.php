@@ -27,7 +27,7 @@ if (isset($_GET['y2'])) {
    <meta charset="UTF-8">
 </head>
 <body>
-   <form action="test.php" method="get">
+   <form action="lab2.3.php" method="get">
        x1<input type="text" name="x1" value="<?php echo $x1 ?>">
        	<select name="operation">
 			<option <?php echo $selectedMinus ?> value="-">-</option>
